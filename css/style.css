@@ -1,0 +1,406 @@
+html {
+  background-image: url(../images/back_body.png);
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.house1, .house2, .house3, .house4, .house5 {
+  margin: auto;
+  margin-bottom: 100px;
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.space {
+  height: 2000px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.house1 {
+  position: static;
+}
+
+.house1 .wall {
+  width: 400px;
+  height: 250px;
+  margin-top: -100px;
+  background-color: #ddb899;
+}
+
+.house1 .roof {
+  width: 0px;
+  margin-top: -600px;
+  border: 200px solid transparent;
+  border-bottom: 150px solid #c9710c;
+}
+
+.house1 .chimney {
+  height: 70px;
+  width: 40px;
+  margin: -130px 250px;
+  background-color: #440f0f;
+}
+
+.house1 .door {
+  height: 150px;
+  width: 90px;
+  background-color: #803411;
+  margin: 280px 0px 10px 290px;
+}
+
+.house1 .window {
+  height: 100px;
+  width: 160px;
+  background-color: #1c80b9;
+  margin: -200px 0px 50px 20px;
+}
+
+.house1 .sun {
+  height: 80px;
+  width: 80px;
+  background-color: yellow;
+  margin-top: -380px;
+  border-radius: 50%;
+}
+
+.house1 .grass {
+  height: 200px;
+  width: 500px;
+  margin-left: -50px;
+  margin-top: 250px;
+  background-color: yellowgreen;
+}
+
+.house1 .sky {
+  width: 500px;
+  height: 300px;
+  margin-left: -50px;
+  margin-top: -500px;
+  background-color: #a0e2eb;
+}
+
+.house2 {
+  position: relative;
+}
+
+.house2 .wall {
+  width: 400px;
+  height: 250px;
+  margin-top: -100px;
+  background-color: #5a402b;
+  z-index: 4;
+}
+
+.house2 .roof {
+  width: 0px;
+  margin-top: -600px;
+  border: 200px solid transparent;
+  border-bottom: 150px solid #3a2104;
+  z-index: 5;
+}
+
+.house2 .chimney {
+  height: 70px;
+  width: 40px;
+  margin: -130px 250px;
+  background-color: #160505;
+  z-index: 6;
+}
+
+.house2 .door {
+  height: 150px;
+  width: 90px;
+  background-color: #291005;
+  margin: 280px 0px 10px 290px;
+  z-index: 7;
+}
+
+.house2 .window {
+  height: 100px;
+  width: 160px;
+  background-color: #be9216;
+  margin: -200px 0px 50px 20px;
+  z-index: 8;
+}
+
+.house2 .sun {
+  height: 40px;
+  width: 40px;
+  background-color: #ebebeb;
+  margin-top: -380px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.house2 .grass {
+  height: 200px;
+  width: 500px;
+  margin-left: -50px;
+  margin-top: 250px;
+  background-color: #181d0e;
+  z-index: 2;
+}
+
+.house2 .sky {
+  background-image: url(../images/13.jpg);
+  width: 500px;
+  height: 300px;
+  margin-left: -50px;
+  margin-top: -500px;
+  background-color: #024a53;
+  z-index: 1;
+}
+
+.house3 {
+  position: absolute;
+  margin-left: 230px;
+}
+
+.house3 .wall {
+  width: 400px;
+  height: 250px;
+  margin-top: -100px;
+  background-color: #ddb899;
+  z-index: 4;
+}
+
+.house3 .wall_winter {
+  width: 400px;
+  height: 250px;
+  margin-top: -250px;
+  background-image: url(../images/winter.jpg);
+  opacity: 0.5;
+}
+
+.house3 .roof {
+  width: 0px;
+  margin-top: -600px;
+  border: 200px solid transparent;
+  border-bottom: 150px solid rgba(201, 113, 12, 0.795);
+  z-index: 5;
+}
+
+.house3 .chimney {
+  height: 70px;
+  width: 40px;
+  margin: -130px 250px;
+  background-color: rgba(68, 15, 15, 0.863);
+  z-index: 6;
+}
+
+.house3 .door {
+  height: 150px;
+  width: 90px;
+  background-color: #803411;
+  margin: 280px 0px 10px 290px;
+  z-index: 7;
+}
+
+.house3 .window {
+  height: 100px;
+  width: 160px;
+  background-color: #1c80b9;
+  margin: -200px 0px 50px 20px;
+  z-index: 8;
+}
+
+.house3 .grass {
+  background-image: url(../images/winter_floor.jpg);
+  height: 200px;
+  width: 500px;
+  margin-left: -50px;
+  margin-top: 250px;
+  background-color: yellowgreen;
+  z-index: 2;
+}
+
+.house3 .sky {
+  background-image: url(../images/unnamed.jpg);
+  width: 500px;
+  height: 300px;
+  margin-left: -50px;
+  margin-top: -500px;
+  background-color: #a0e2eb;
+  z-index: 1;
+}
+
+.fixed_text {
+  margin-top: 600px;
+}
+
+.house4 {
+  margin-left: 800px;
+}
+
+.house4 .fixed_text {
+  position: fixed;
+  margin-left: -25px;
+  top: -40px;
+  z-index: 10;
+}
+
+.house4 .wall {
+  position: fixed;
+  width: 400px;
+  height: 250px;
+  top: 300px;
+  background-color: #ddb899;
+  z-index: 4;
+}
+
+.house4 .roof {
+  position: fixed;
+  width: 0px;
+  top: -50px;
+  border: 200px solid transparent;
+  border-bottom: 150px solid #c9710c;
+  z-index: 5;
+}
+
+.house4 .chimney {
+  position: fixed;
+  height: 70px;
+  width: 40px;
+  margin-left: 260px;
+  top: 175px;
+  background-color: #440f0f;
+  z-index: 6;
+}
+
+.house4 .door {
+  position: fixed;
+  height: 150px;
+  width: 90px;
+  background-color: #803411;
+  margin-left: 290px;
+  top: 390px;
+  z-index: 7;
+}
+
+.house4 .window {
+  position: fixed;
+  height: 100px;
+  width: 160px;
+  background-color: #1c80b9;
+  top: 350px;
+  margin-left: 20px;
+  z-index: 8;
+}
+
+.house4 .sun {
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  background-color: yellow;
+  top: 120px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.house4 .grass {
+  position: fixed;
+  margin-left: -50px;
+  height: 200px;
+  width: 500px;
+  top: 400px;
+  background-color: yellowgreen;
+  z-index: 2;
+}
+
+.house4 .sky {
+  position: fixed;
+  width: 500px;
+  height: 300px;
+  margin-left: -50px;
+  top: 100px;
+  background-color: #a0e2eb;
+  z-index: 1;
+}
+
+.house5 {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-left: 230px;
+  top: 30px;
+}
+
+.house5 .wall {
+  width: 400px;
+  height: 250px;
+  margin-top: -100px;
+  background-color: #5a402b;
+  z-index: 4;
+}
+
+.house5 .roof {
+  width: 0px;
+  margin-top: -600px;
+  border: 200px solid transparent;
+  border-bottom: 150px solid #3a2104;
+  z-index: 5;
+}
+
+.house5 .chimney {
+  height: 70px;
+  width: 40px;
+  margin: -130px 250px;
+  background-color: #160505;
+  z-index: 6;
+}
+
+.house5 .door {
+  height: 150px;
+  width: 90px;
+  background-color: #291005;
+  margin: 280px 0px 10px 290px;
+  z-index: 7;
+}
+
+.house5 .window {
+  height: 100px;
+  width: 160px;
+  background-color: #be9216;
+  margin: -200px 0px 50px 20px;
+  z-index: 8;
+}
+
+.house5 .sun {
+  height: 40px;
+  width: 40px;
+  background-color: #ebebeb;
+  margin-top: -380px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.house5 .grass {
+  background-color: #181d0e;
+  height: 200px;
+  width: 500px;
+  margin-left: -50px;
+  margin-top: 250px;
+  z-index: 2;
+}
+
+.house5 .sky {
+  background-image: url(../images/13.jpg);
+  width: 500px;
+  height: 300px;
+  margin-left: -50px;
+  margin-top: -500px;
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */

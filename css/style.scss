@@ -1,0 +1,358 @@
+html {
+    background-image: url(../images/back_body.png);
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.house1, .house2, .house3, .house4, .house5 {
+    margin: auto;
+    margin-bottom: 100px;
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.space {
+    height: 2000px;
+}
+
+h1 {
+    text-align: center;
+}
+.house1 {
+    position: static;
+    .wall {
+        width: 400px;
+        height: 250px;
+        margin-top: -100px;
+        background-color: rgb(221, 184, 153);
+    }
+    .roof {
+        width: 0px;
+        margin-top: -600px;
+        border: 200px solid transparent; 
+        border-bottom: 150px solid rgb(201, 113, 12);
+    }
+    .chimney {
+        height: 70px;
+        width: 40px;
+        margin: -130px 250px;
+        background-color: rgb(68, 15, 15);
+    }
+    .door {
+        height: 150px;
+        width: 90px;
+        background-color: rgb(128, 52, 17);
+        margin: 280px 0px 10px 290px;
+    }
+    .window {
+        height: 100px;
+        width: 160px;
+        background-color: rgb(28, 128, 185);
+        margin: -200px 0px 50px 20px;
+    }
+    .sun {
+        height: 80px;
+        width: 80px;
+        background-color: yellow;
+        margin-top: -380px;
+        border-radius: 50%;
+    }
+    .grass {
+        height: 200px;
+        width: 500px;
+        margin-left: -50px;
+        margin-top: 250px;
+        background-color: yellowgreen;
+    }
+    .sky {
+        width: 500px;
+        height: 300px;
+        margin-left: -50px;
+        margin-top: -500px;
+        background-color: rgb(160, 226, 235);
+    }
+}
+
+.house2 {
+    position: relative;
+    .wall {
+        width: 400px;
+        height: 250px;
+        margin-top: -100px;
+        background-color: rgb(90, 64, 43);
+        z-index: 4;
+    }
+    .roof {
+        width: 0px;
+        margin-top: -600px;
+        border: 200px solid transparent; 
+        border-bottom: 150px solid rgb(58, 33, 4);
+        z-index: 5;
+    }
+    .chimney {
+        height: 70px;
+        width: 40px;
+        margin: -130px 250px;
+        background-color: rgb(22, 5, 5);
+        z-index: 6;
+    }
+    .door {
+        height: 150px;
+        width: 90px;
+        background-color: rgb(41, 16, 5);
+        margin: 280px 0px 10px 290px;
+        z-index: 7;
+    }
+    .window {
+        height: 100px;
+        width: 160px;
+        background-color: rgb(190, 146, 22);
+        margin: -200px 0px 50px 20px;
+        z-index: 8;
+    }
+    .sun {
+        height: 40px;
+        width: 40px;
+        background-color: rgb(235, 235, 235);
+        margin-top: -380px;
+        border-radius: 50%;
+        z-index: 3;
+    }
+    .grass {
+        height: 200px;
+        width: 500px;
+        margin-left: -50px;
+        margin-top: 250px;
+        background-color: rgb(24, 29, 14);
+        z-index: 2;
+    }
+    .sky {
+        background-image: url(../images/13.jpg);
+        width: 500px;
+        height: 300px;
+        margin-left: -50px;
+        margin-top: -500px;
+        background-color: rgb(2, 74, 83);
+        z-index: 1;
+    }
+}
+
+.house3 {
+    position: absolute;
+    margin-left: 230px;
+    .wall {
+        width: 400px;
+        height: 250px;
+        margin-top: -100px;
+        background-color: rgb(221, 184, 153);
+        z-index: 4;
+    }
+    .wall_winter {
+        width: 400px;
+        height: 250px;
+        margin-top: -250px;
+        background-image: url(../images/winter.jpg);
+        opacity: 0.5;
+    }
+    .roof {
+        width: 0px;
+        margin-top: -600px;
+        border: 200px solid transparent; 
+        border-bottom: 150px solid rgba(201, 113, 12, 0.795);
+        z-index: 5;
+    }
+    .chimney {
+        height: 70px;
+        width: 40px;
+        margin: -130px 250px;
+        background-color: rgba(68, 15, 15, 0.863);
+        z-index: 6;
+    }
+    .door {
+        height: 150px;
+        width: 90px;
+        background-color: rgb(128, 52, 17);
+        margin: 280px 0px 10px 290px;
+        z-index: 7;
+    }
+    .window {
+        height: 100px;
+        width: 160px;
+        background-color: rgb(28, 128, 185);
+        margin: -200px 0px 50px 20px;
+        z-index: 8;
+    }
+    .grass {
+        background-image: url(../images/winter_floor.jpg);
+        height: 200px;
+        width: 500px;
+        margin-left: -50px;
+        margin-top: 250px;
+        background-color: yellowgreen;
+        z-index: 2;
+    }
+    .sky {
+        background-image: url(../images/unnamed.jpg);
+        width: 500px;
+        height: 300px;
+        margin-left: -50px;
+        margin-top: -500px;
+        background-color: rgb(160, 226, 235);
+        z-index: 1;
+    }
+}
+
+.fixed_text {
+    margin-top: 600px;
+}
+.house4 {
+    margin-left: 800px;
+    .fixed_text {
+        position: fixed;
+        margin-left: -25px;
+        top: -40px;
+        z-index: 10;
+    }
+    .wall {
+        position: fixed;
+        width: 400px;
+        height: 250px;
+        top: 300px;
+        background-color: rgb(221, 184, 153);
+        z-index: 4;
+    }
+    .roof {
+        position: fixed;
+        width: 0px;
+        top: -50px;
+        border: 200px solid transparent; 
+        border-bottom: 150px solid rgb(201, 113, 12);
+        z-index: 5;
+    }
+    .chimney {
+        position: fixed;
+        height: 70px;
+        width: 40px;
+        margin-left: 260px;
+        top: 175px;
+        background-color: rgb(68, 15, 15);
+        z-index: 6;
+    }
+    .door {
+        position: fixed;
+        height: 150px;
+        width: 90px;
+        background-color: rgb(128, 52, 17);
+        margin-left: 290px;
+        top: 390px;
+        z-index: 7;
+    }
+    .window {
+        position: fixed;
+        height: 100px;
+        width: 160px;
+        background-color: rgb(28, 128, 185);
+        top: 350px;
+        margin-left: 20px;
+        z-index: 8;
+    }
+    .sun {
+        position: fixed;
+        height: 80px;
+        width: 80px;
+        background-color: yellow;
+        top: 120px;
+        border-radius: 50%;
+        z-index: 3;
+    }
+    .grass {
+        position: fixed;
+        margin-left: -50px;
+        height: 200px;
+        width: 500px;
+        top: 400px;
+        background-color: yellowgreen;
+        z-index: 2;
+    }
+    .sky {
+        position: fixed;
+        width: 500px;
+        height: 300px;
+        margin-left: -50px;
+        top: 100px;
+        background-color: rgb(160, 226, 235);
+        z-index: 1;
+    }
+}
+.house5 {
+    position: sticky;
+    margin-left: 230px;
+    top: 30px;
+    .wall {
+        width: 400px;
+        height: 250px;
+        margin-top: -100px;
+        background-color: rgb(90, 64, 43);
+        z-index: 4;
+    }
+    .roof {
+        width: 0px;
+        margin-top: -600px;
+        border: 200px solid transparent; 
+        border-bottom: 150px solid rgb(58, 33, 4);
+        z-index: 5;
+    }
+    .chimney {
+        height: 70px;
+        width: 40px;
+        margin: -130px 250px;
+        background-color: rgb(22, 5, 5);
+        z-index: 6;
+    }
+    .door {
+        height: 150px;
+        width: 90px;
+        background-color: rgb(41, 16, 5);
+        margin: 280px 0px 10px 290px;
+        z-index: 7;
+    }
+    .window {
+        height: 100px;
+        width: 160px;
+        background-color: rgb(190, 146, 22);
+        margin: -200px 0px 50px 20px;
+        z-index: 8;
+    }
+    .sun {
+        height: 40px;
+        width: 40px;
+        background-color: rgb(235, 235, 235);
+        margin-top: -380px;
+        border-radius: 50%;
+        z-index: 3;
+    }
+    .grass {
+        background-color: rgb(24, 29, 14);
+        height: 200px;
+        width: 500px;
+        margin-left: -50px;
+        margin-top: 250px;
+        z-index: 2;
+    }
+    .sky {
+        background-image: url(../images/13.jpg);
+        width: 500px;
+        height: 300px;
+        margin-left: -50px;
+        margin-top: -500px;
+        z-index: 1;
+    }
+}
